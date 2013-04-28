@@ -1,0 +1,9 @@
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\bin\Debug\TrackShoe.exe.config
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\bin\Debug\TrackShoe.exe
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\bin\Debug\TrackShoe.pdb
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.csprojResolveAssemblyReference.cache
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.mainForm.resources
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.Properties.Resources.resources
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.csproj.GenerateResource.Cache
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.exe
+c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.pdb
