@@ -7,6 +7,7 @@
     <shoeBrand>Brooks</shoeBrand>
     <shoeModel>Ravenna 4</shoeModel>
     <dateAcquired></dateAcquired>
+    <startingMiles>0</startingMiles>
     <warningMiles>250</warningMiles>
     <replaceMiles>350</replaceMiles>
     <retired>false</retired>
@@ -14,14 +15,28 @@
     <vendor>Big Peach Running Co.</vendor>
     <image>
       <src>amazon</src>
-      <url></url>
+      <url>http://ecx.images-amazon.com/images/I/41rGYLp8JxL._SX395_.jpg</url>
     </image>
+
+    <runs>
+      <runLength>2.5</runLength>
+      <runMetric>mi</runMetric>
+      <runDate></runDate>
+      <runLength>3.1</runLength>
+      <runMetric>km</runMetric>
+      <runDate></runDate>
+      <runLength>4.2</runLength>
+      <runMetric>mi</runMetric>
+      <runDate></runDate>
+    </runs>
+    
   </shoe>
 
   <shoe>
     <shoeBrand>Saucony</shoeBrand>
-    <shoeModel>ProGrid 4</shoeModel>
+    <shoeModel>ProGrid Guide 5</shoeModel>
     <dateAcquired></dateAcquired>
+    <startingMiles>0</startingMiles>
     <warningMiles>250</warningMiles>
     <replaceMiles>350</replaceMiles>
     <retired>false</retired>
@@ -29,8 +44,13 @@
     <vendor>Big Peach Running Co.</vendor>
     <image>
       <src>amazon</src>
-      <url></url>
+      <url>http://ecx.images-amazon.com/images/I/810k%2BQRSi7L._SL1500_.jpg</url>
     </image>
+    <runs>
+      <runLength>2.5</runLength>
+      <runMetric>mi</runMetric>
+      <runDate></runDate>
+    </runs>
   </shoe>
   
 </shoeConfig>
