@@ -7,3 +7,6 @@ c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug
 c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.csproj.GenerateResource.Cache
 c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.exe
 c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.pdb
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\bin\Debug\TrackShoe.exe.config
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.exe
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.pdb
