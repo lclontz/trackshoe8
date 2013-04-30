@@ -7,6 +7,7 @@ c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug
 c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.csproj.GenerateResource.Cache
 c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.exe
 c:\users\lee\documents\visual studio 2012\Projects\TrackShoe\TrackShoe\obj\Debug\TrackShoe.pdb
+<<<<<<< HEAD
 C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\bin\Debug\TrackShoe.exe.config
 C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.exe
 C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.pdb
@@ -16,3 +17,8 @@ C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.cs
 C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.mainForm.resources
 C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.Properties.Resources.resources
 C:\Users\Lee Clontz\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.csproj.GenerateResource.Cache
+=======
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\bin\Debug\TrackShoe.exe.config
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.exe
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.pdb
+>>>>>>> af1673de33b85a7b401a6e13858bd826a1af8802
