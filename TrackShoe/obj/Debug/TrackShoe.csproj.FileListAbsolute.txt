@@ -22,3 +22,9 @@ C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\bin\Debug\TrackShoe.exe.confi
 C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.exe
 C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.pdb
 >>>>>>> af1673de33b85a7b401a6e13858bd826a1af8802
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\bin\Debug\TrackShoe.exe
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\bin\Debug\TrackShoe.pdb
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.csprojResolveAssemblyReference.cache
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.mainForm.resources
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.Properties.Resources.resources
+C:\Users\Lee\Documents\GitHub\trackshoe8\TrackShoe\obj\Debug\TrackShoe.csproj.GenerateResource.Cache

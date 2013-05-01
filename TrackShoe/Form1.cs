@@ -10,27 +10,54 @@ using System.Windows.Forms;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
+
 namespace TrackShoe
 {
+   
    
     public partial class mainForm : Form
     {
         
-        public string readXML() {
+      public string readXML() {
 
-            XmlDocument shoeDoc = new XmlDocument();
-            shoeDoc.Load("shoes.xml");
+          XDocument shoeDoc = XDocument.Load("shoes.xml");
 
-            string shoeDocString;
-            shoeDocString = File.ReadAllText("shoes.xml");
+          List<Shoe> shoeList =
+  (from shoes in shoeDoc.Descendants("shoe")
+   select new Shoe
+   {
+       shoeBrand = shoes.Element("shoeBrand").Value,
+       shoeModel = shoes.Element("shoeModel").Value,
+       startingMiles = shoes.Element("startingMiles").Value,
+   }).ToList<Shoe>();
 
-            XDocument xDoc = XDocument.Parse(shoeDocString);
+          foreach(int element in shoeList) {
 
-            var allShoes = (from x in xDoc.Descendants("shoe")
-                            select new Shoe {
-                                shoeBrand = x.Element("shoeBrand").Value;
-            shoeModel = xDoc.Element
-                            }
+          MessageBox.Show();
+
+          }
+            /*
+             *  XmlSerializer ser = new XmlSerializer(typeof(XmlNode));
+    XmlNode myNode= new XmlDocument().
+    CreateNode(XmlNodeType.Element, "MyNode", "ns");
+    myNode.InnerText = "Hello Node";
+    TextWriter writer = new StreamWriter(filename);
+    ser.Serialize(writer, myNode);
+    writer.Close();
+             * 
+             * 
+             */ 
+
+            //string shoeDocString;
+            //shoeDocString = File.ReadAllText("shoes.xml");
+
+//            XDocument xDoc = XDocument.Parse(shoeDocString);
+
+  //          var allShoes = (from x in xDoc.Descendants("shoe")
+    //                        select new Shoe {
+      //                          shoeBrand = x.Element("shoeBrand").Value;
+        //                   }
 
 
            /* XmlNode thisShoe = shoeDoc.SelectSingleNode("/shoeConfig/shoe/shoeBrand/text()");
@@ -46,10 +73,11 @@ namespace TrackShoe
 
                 shoePic.Load("http://www.emory.edu/home/_includes/images/callout/campus-visit.jpg");
 
-            }
+        //    }
             */
             return "foo";
 
+        //}
         }
         
         public mainForm()
@@ -61,9 +89,8 @@ namespace TrackShoe
         {
 
             //Okay, let's load our XML file//
-            
-            readXML();
 
+            readXML();
 
 
         }

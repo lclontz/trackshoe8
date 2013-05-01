@@ -9,8 +9,9 @@ namespace TrackShoe
    public class Shoe
     {
 
-       public string shoeBrand { get; set; };
-       public string shoeModel {get; set;};
+       public string shoeBrand { get; set; }
+       public string shoeModel {get; set;}
+       public string startingMiles { get; set; }
 
         
 
