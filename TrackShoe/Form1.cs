@@ -18,8 +18,16 @@ namespace TrackShoe
    
     public partial class mainForm : Form
     {
-        
-      public string readXML() {
+
+        public void Print(Shoe obj)
+        {
+
+            MessageBox.Show(obj.imageURL);
+            shoePic.Load(obj.imageURL);
+        }
+
+
+      public bool readXML() {
 
           XDocument shoeDoc = XDocument.Load("shoes.xml");
 
@@ -30,55 +38,19 @@ namespace TrackShoe
        shoeBrand = shoes.Element("shoeBrand").Value,
        shoeModel = shoes.Element("shoeModel").Value,
        startingMiles = shoes.Element("startingMiles").Value,
+       imageURL = shoes.Element("image").Element("url").Value,
    }).ToList<Shoe>();
 
-          foreach(int element in shoeList) {
-
-          MessageBox.Show();
-
-          }
-            /*
-             *  XmlSerializer ser = new XmlSerializer(typeof(XmlNode));
-    XmlNode myNode= new XmlDocument().
-    CreateNode(XmlNodeType.Element, "MyNode", "ns");
-    myNode.InnerText = "Hello Node";
-    TextWriter writer = new StreamWriter(filename);
-    ser.Serialize(writer, myNode);
-    writer.Close();
-             * 
-             * 
-             */ 
-
-            //string shoeDocString;
-            //shoeDocString = File.ReadAllText("shoes.xml");
-
-//            XDocument xDoc = XDocument.Parse(shoeDocString);
-
-  //          var allShoes = (from x in xDoc.Descendants("shoe")
-    //                        select new Shoe {
-      //                          shoeBrand = x.Element("shoeBrand").Value;
-        //                   }
+          shoeList.ForEach(Print);
+          
+          
 
 
-           /* XmlNode thisShoe = shoeDoc.SelectSingleNode("/shoeConfig/shoe/shoeBrand/text()");
-
-            foreach (XmlNode Shoe in shoeDoc.SelectNodes("/shoeConfig/shoe")) {
- 
-           // MessageBox.Show();
-           // MessageBox.Show(Shoe.SelectSingleNode("shoeModel/text()").InnerText);
-
-                    
-
-
-
-                shoePic.Load("http://www.emory.edu/home/_includes/images/callout/campus-visit.jpg");
-
-        //    }
-            */
-            return "foo";
-
-        //}
-        }
+               
+                return true;
+            }
+           
+         
         
         public mainForm()
         {

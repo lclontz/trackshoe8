@@ -12,7 +12,7 @@ namespace TrackShoe
        public string shoeBrand { get; set; }
        public string shoeModel {get; set;}
        public string startingMiles { get; set; }
-
+       public string imageURL { get; set; }
         
 
     }
