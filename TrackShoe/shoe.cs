@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace TrackShoe
 {
@@ -13,7 +14,8 @@ namespace TrackShoe
        public string shoeModel {get; set;}
        public string startingMiles { get; set; }
        public string imageURL { get; set; }
-        
+       public string[] runLengths { get; set; }
+       
 
     }
 }

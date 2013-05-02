@@ -42,6 +42,7 @@ namespace TrackShoe
        shoeModel = shoes.Element("shoeModel").Value,
        startingMiles = shoes.Element("startingMiles").Value,
        imageURL = shoes.Element("image").Element("url").Value,
+       runLengths = shoes.Elements("runs").Elements("runLength").Attributes("length").ToList<string>(),
    }).ToList<Shoe>();
 
 
@@ -52,12 +53,15 @@ namespace TrackShoe
             }
 
 
+   
+
       public void populateInitialView(Shoe initialShoe)
       {
           
           shoePic.Load(initialShoe.imageURL);
           shoeBrand.Text = initialShoe.shoeBrand + " " + initialShoe.shoeModel;
           shoeMiles.Text = "Current Miles: " + initialShoe.startingMiles;
+          MessageBox.Show(initialShoe.runLengths);
 
       }
         
