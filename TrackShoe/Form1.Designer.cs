@@ -31,13 +31,15 @@
             this.shoePic = new System.Windows.Forms.PictureBox();
             this.nextButton = new System.Windows.Forms.Button();
             this.prevButton = new System.Windows.Forms.Button();
+            this.shoeBrand = new System.Windows.Forms.Label();
+            this.shoeMiles = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.shoePic)).BeginInit();
             this.SuspendLayout();
             // 
             // shoePic
             // 
             this.shoePic.Location = new System.Drawing.Point(17, 16);
-            this.shoePic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.shoePic.Margin = new System.Windows.Forms.Padding(4);
             this.shoePic.Name = "shoePic";
             this.shoePic.Size = new System.Drawing.Size(597, 475);
             this.shoePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -65,11 +67,32 @@
             this.prevButton.UseVisualStyleBackColor = true;
             this.prevButton.Click += new System.EventHandler(this.prevButton_Click);
             // 
+            // shoeBrand
+            // 
+            this.shoeBrand.AutoSize = true;
+            this.shoeBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoeBrand.Location = new System.Drawing.Point(234, 502);
+            this.shoeBrand.Name = "shoeBrand";
+            this.shoeBrand.Size = new System.Drawing.Size(0, 29);
+            this.shoeBrand.TabIndex = 3;
+            // 
+            // shoeMiles
+            // 
+            this.shoeMiles.AutoSize = true;
+            this.shoeMiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoeMiles.Location = new System.Drawing.Point(234, 536);
+            this.shoeMiles.Name = "shoeMiles";
+            this.shoeMiles.Size = new System.Drawing.Size(0, 29);
+            this.shoeMiles.TabIndex = 4;
+            this.shoeMiles.Click += new System.EventHandler(this.shoeMiles_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 604);
+            this.Controls.Add(this.shoeMiles);
+            this.Controls.Add(this.shoeBrand);
             this.Controls.Add(this.prevButton);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.shoePic);
@@ -79,6 +102,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.shoePic)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -87,6 +111,8 @@
         private System.Windows.Forms.PictureBox shoePic;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Button prevButton;
+        private System.Windows.Forms.Label shoeBrand;
+        private System.Windows.Forms.Label shoeMiles;
     }
 }
 

@@ -56,6 +56,8 @@ namespace TrackShoe
       {
           
           shoePic.Load(initialShoe.imageURL);
+          shoeBrand.Text = initialShoe.shoeBrand + " " + initialShoe.shoeModel;
+          shoeMiles.Text = "Current Miles: " + initialShoe.startingMiles;
 
       }
         
@@ -72,7 +74,7 @@ namespace TrackShoe
 
             int totalNumbers = readXML();
 
-            MessageBox.Show(totalNumbers.ToString());
+           // MessageBox.Show(totalNumbers.ToString());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -94,8 +96,17 @@ namespace TrackShoe
 
             thisIndex++;
             whichIndex = thisIndex;
-            MessageBox.Show(whichIndex.ToString());
+
+            if (thisIndex > shoeList.Count - 1)
+            {
+                thisIndex = 0;
+                whichIndex = 0;
+            }
+
+            //MessageBox.Show(whichIndex.ToString());
             shoePic.Load(shoeList[thisIndex].imageURL);
+            shoeBrand.Text = shoeList[thisIndex].shoeBrand + " " + shoeList[thisIndex].shoeModel;
+            shoeMiles.Text = "Current Miles: " + shoeList[thisIndex].startingMiles;
 
 
         }
@@ -104,12 +115,26 @@ namespace TrackShoe
         {
             thisIndex--;
             whichIndex= thisIndex;
+            if (thisIndex < 0)
+            {
+                thisIndex = shoeList.Count -1;
+                whichIndex = thisIndex;
+            }
+
             shoePic.Load(shoeList[thisIndex].imageURL);
+            shoeBrand.Text = shoeList[thisIndex].shoeBrand + " " + shoeList[thisIndex].shoeModel;
+            shoeMiles.Text = "Current Miles: " + shoeList[thisIndex].startingMiles;
+
         }
 
         public void prevButton_Click(object sender, EventArgs e)
         {
             regressToPrevious(whichIndex);
+
+        }
+
+        private void shoeMiles_Click(object sender, EventArgs e)
+        {
 
         }
 
